@@ -6,8 +6,8 @@ tinyshare is a tiny TypeScript-first helper for building social sharing URLs and
 
 - TypeScript-first: sharer options are typed per-service so incorrect options are caught at compile time.
 - Tiny: single-file module with no runtime dependencies.
-- Can be used with any UI library (e.g. Vue, React, or plain vanilla JS) because it only handles the sharing part (as opposed to Sharer.js which also bind to HTML elements)
-- The alternatives I found don't expose an API to open a share window programmatically - they are tightly coupled to the buttons / UI
+- Can be used with any UI library (e.g. Vue, React, or plain vanilla JS) because it only handles the sharing part (as opposed to Sharer.js which also binds to HTML elements)
+- The alternatives I found don't expose an API to open a share window programmatically - they are all tightly coupled to the buttons / UI
 - Compatible: preserves the original sharing logic and URL formats from Sharer.js.
 
 ## Usage
@@ -30,7 +30,7 @@ share('https://example.com', 'facebook', {
 })
 ```
 
-Use your own icons / UI design:
+Use your own icons / UI design (React example but works in other frameworks too):
 
 ```ts
 import share from 'tinyshare'
@@ -40,10 +40,10 @@ const url = 'https://example.com'
 
 function SocialShare() {
   return (
-    <div style={{ display: 'flex', gap: '1em }}>
-      <FaFacebook role="button" tabIndex={0} onClick={() => share(url, 'facebook', { hashtag: `#news` }) } />
-      <FaTwitter role="button" tabIndex={0} onClick={() => share(url, 'facebook', { title: 'Hello', hashtags: 'news' }) } />
-      <FaWhatsapp role="button" tabIndex={0} onClick={() => share(url, 'facebook', { title: 'Hello' }) } />
+    <div style={{ display: 'flex', gap: '1em' }}>
+      <FaFacebook role="button" tabIndex={0} onClick={() => share(url, 'facebook', { hashtag: '#news' }) } />
+      <FaTwitter role="button" tabIndex={0} onClick={() => share(url, 'twitter', { title: 'Hello', hashtags: 'news' }) } />
+      <FaWhatsapp role="button" tabIndex={0} onClick={() => share(url, 'whatsapp', { title: 'Hello' }) } />
     </div>
   )
 }
@@ -55,7 +55,8 @@ function SocialShare() {
 np
 ```
 
-## Related
+## Related projects
 
 - https://github.com/ellisonleao/sharer.js
-- https://www.npmjs.com/package/react-social-icons
+- https://github.com/couetilc/react-social-icons
+- https://github.com/nygardk/react-share
