@@ -12,19 +12,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/vite-react@npm:^7.0.2":
-  version: 7.0.2
-  resolution: "@tsconfig/vite-react@npm:7.0.2"
-  checksum: 10c0/cc63685e4f7b70a2ca34becb81939dad3f852f5640b6072aeeb2671b41f8bd1d80746ac7438c166090d6f22ca41db89282238e09a8877b8ac495c9fb0fa58257
-  languageName: node
-  linkType: hard
-
 "tinyshare@workspace:.":
   version: 0.0.0-use.local
   resolution: "tinyshare@workspace:."
   dependencies:
     "@tsconfig/strictest": "npm:^2.0.8"
-    "@tsconfig/vite-react": "npm:^7.0.2"
     typescript: "npm:^5.9.3"
   languageName: unknown
   linkType: soft

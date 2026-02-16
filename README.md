@@ -17,3 +17,9 @@ import share from 'tinyshare'
 // share(url, sharerName, options)
 share('https://example.com', 'twitter', { title: 'Hello', hashtags: 'news' })
 ```
+
+## Publishing
+
+```bash
+np
+```

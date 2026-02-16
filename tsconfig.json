@@ -1,6 +1,10 @@
 {
-  "extends": ["@tsconfig/strictest", "@tsconfig/vite-react"],
+  "extends": ["@tsconfig/strictest"],
   "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+
     // allow for node type stripping
     "verbatimModuleSyntax": true,
     "erasableSyntaxOnly": true,
@@ -12,9 +16,8 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "noEmit": true,
   },
   "include": [
-    "index.ts",
+    "src/**/*.ts"
   ],
 }
