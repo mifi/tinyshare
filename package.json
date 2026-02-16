@@ -1,6 +1,6 @@
 {
   "name": "tinyshare",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny, TypeScript-first social share helper (fork of sharer.js)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
