@@ -1,4 +1,25 @@
 {
   "name": "tinyshare",
-  "packageManager": "yarn@4.12.0"
+  "version": "1.0.0",
+  "description": "A tiny, TypeScript-first social share helper (typed fork of sharer.js)",
+  "main": "index.ts",
+  "types": "index.ts",
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": ["share", "social", "sharer", "typescript", "tinyshare"],
+  "author": "Ellison Leao <ellisonleao@gmail.com> (original), Fork maintained by project owner",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mifi/tinyshare.git"
+  },
+  "packageManager": "yarn@4.12.0",
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.8",
+    "@tsconfig/vite-react": "^7.0.2",
+    "typescript": "^5.9.3"
+  }
 }

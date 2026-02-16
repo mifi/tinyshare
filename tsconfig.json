@@ -1,0 +1,20 @@
+{
+  "extends": ["@tsconfig/strictest", "@tsconfig/vite-react"],
+  "compilerOptions": {
+    // allow for node type stripping
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+
+    // from https://github.com/tsconfig/bases/blob/main/bases/vite-react.json
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+  },
+  "include": [
+    "index.ts",
+  ],
+}
